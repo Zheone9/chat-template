@@ -11,6 +11,11 @@ body {
   font-size: 1.7rem;
   z-index: 99999;
   display: none;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+  background-color: rgba(149, 149, 149, 0.9);
+  border-radius: 3px;
+  top: 0;
 }
 
 #check-toggle {
@@ -24,6 +29,7 @@ body {
   height: 100vh;
   padding-left: 20px;
   padding-right: 20px;
+  overflow: auto;
 }
 .online-users img {
   width: 50px;
@@ -73,6 +79,13 @@ body {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   margin-bottom: 10px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
 }
 
 .online-users .div-user {
@@ -250,9 +263,23 @@ body {
     display: block;
   }
   .online-users {
-    position: fixed;
-    left: -314px;
+    width: 200px;
+    left: -240px;
+  }
+  .chat-box .div-user {
+    padding-left: 30px;
+  }
+  .chat-box .div-user .label-user {
+    padding-left: 20px;
+  }
 
+  .chat-box .div-user .online {
+    padding-left: 20px;
+  }
+
+  .online-users {
+    padding-top: 40px;
+    position: fixed;
     z-index: 999;
     transition: ease-in-out 0.2s;
   }
@@ -262,6 +289,6 @@ body {
   }
 
   #check-toggle:checked ~ #bar-toggle {
-    left: 286.8px;
+    left: 196px;
   }
 }
