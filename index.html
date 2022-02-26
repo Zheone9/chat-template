@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3010dedcdd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="chat-design">
+        <div class="online-users">
+          <div class="search-div">
+            <input type="text" spellcheck="false" placeholder="Buscar" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="div-user">
+            <img src="assets/usuario-icon.png" alt="" />
+            <span class="label-user">Jorge ayerbe</span>
+            <div class="online">
+              <span class="dot"></span>
+              <span class="label-user-online">online</span>
+            </div>
+          </div>
+          <div class="div-user">
+            <img src="assets/usuario-icon.png" alt="" />
+            <span class="label-user">Jorge ayerbe</span>
+            <div class="online">
+              <span class="dot"></span>
+              <span class="label-user-online">online</span>
+            </div>
+          </div>
+        </div>
+        <div class="chat-box">
+          <div class="header-chat">
+            <div class="div-user">
+              <img src="assets/usuario-icon.png" alt="" />
+              <span class="label-user">Chatea con Jorge ayerbe</span>
+              <div class="online">
+                <span class="dot"></span>
+                <span class="label-user-online">online</span>
+              </div>
+            </div>
+          </div>
+          <div class="body-chat" id="body-chat">
+            <div class="to-message">
+              <span class="label-user-message"
+                ><span class="message-date">10:10 AM Today</span> Jorge</span
+              >
+
+              <div class="sent-message">
+                <span
+                  >Hi Vincent, how are you? How is the project coming
+                  along?</span
+                >
+              </div>
+            </div>
+
+            <div class="from-message">
+              <span class="label-user-message">
+                <span class="message-date">Andrea Samboni</span> 10:10 AM
+                Today</span
+              >
+
+              <div class="sent-message">
+                <span
+                  >Hi Vincent, how are you? How is the project coming
+                  along?</span
+                >
+              </div>
+            </div>
+            <div class="from-message">
+              <span class="label-user-message">
+                <span class="message-date">Andrea Samboni</span> 10:10 AM
+                Today</span
+              >
+
+              <div class="sent-message">
+                <span
+                  >Hi Vincent, how are you? How is the project coming
+                  along?</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="message-chat">
+            <textarea
+              name="textarea"
+              placeholder="Write something"
+              spellcheck="false"
+            ></textarea>
+            <i class="fa-solid fa-paper-plane"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
