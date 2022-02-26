@@ -6,6 +6,18 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
 }
+#bar-toggle {
+  position: absolute;
+  font-size: 1.7rem;
+  z-index: 99999;
+  display: none;
+}
+
+#check-toggle {
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
 .online-users {
   background: #45435c;
 
@@ -224,4 +236,32 @@ body {
   position: absolute;
   top: 56px;
   margin-left: 10px;
+  transition: ease-in-out 0.2s;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
+  .chat-design {
+    display: block;
+  }
+  #bar-toggle {
+    display: block;
+  }
+  .online-users {
+    position: fixed;
+    left: -314px;
+
+    z-index: 999;
+    transition: ease-in-out 0.2s;
+  }
+
+  #check-toggle:checked ~ .online-users {
+    left: 0px;
+  }
+
+  #check-toggle:checked ~ #bar-toggle {
+    left: 286.8px;
+  }
 }
